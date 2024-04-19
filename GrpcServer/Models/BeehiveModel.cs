@@ -11,7 +11,7 @@ namespace GrpcServer.Models
         [BsonElement("hive number")]
         public int HiveNumber { get; set; }
         [BsonElement("date")]
-        public DateTime Date { get; set; }
+        public String Date { get; set; }
         [BsonElement("hive temp")]
         public double HiveTemp { get; set; }
         [BsonElement("hive humidity")]
@@ -34,13 +34,13 @@ namespace GrpcServer.Models
         public int Rain { get; set; }
         [BsonElement("lat")]
         public double Lat { get; set; }
-        [BsonElement("lon")]
+        [BsonElement("long")]
         public double Lon { get; set; }
-        [BsonElement("file_name")]
+        [BsonElement("file name")]
         public string FileName { get; set; }
-        [BsonElement("queen_presence")]
+        [BsonElement("queen presence")]
         public int QueenPresence { get; set; }
-        [BsonElement("queen_acceptance")]
+        [BsonElement("queen acceptance")]
         public int QueenAcceptance { get; set; }
         [BsonElement("frames")]
         public int Frames { get; set; }
@@ -48,7 +48,7 @@ namespace GrpcServer.Models
         public int Target { get; set; }
         [BsonElement("time")]
         public double Time { get; set; }
-        [BsonElement("queen_status")]
+        [BsonElement("queen status")]
         public int QueenStatus { get; set; }
     }
 }

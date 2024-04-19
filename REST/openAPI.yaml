@@ -1,0 +1,203 @@
+openapi: 3.0.0
+info:
+  title: Beehive API
+  version: 1.0.0
+  description: API for managing beehive data
+paths:
+  /GetBeehiveValueById/{id}:
+    get:
+      summary: Get Beehive value by ID
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: ID of the Beehive value to retrieve
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BeehiveValue'
+        '404':
+          description: Beehive with the specified ID not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValueMessage'
+        '500':
+          description: Internal server error
+  /addBeehive:
+    post:
+      summary: Add Beehive value
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BeehiveValue'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValueMessage'
+        '500':
+          description: Internal server error
+  /deleteBeehive/{id}:
+    delete:
+      summary: Delete Beehive by ID
+      description: Deletes Beehive data with the specified ID.
+      parameters:
+        - in: path
+          name: id
+          description: ID of the Beehive to delete
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValueMessage'
+        '404':
+          description: Beehive with the specified ID not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValueMessage'
+        '500':
+          description: Internal Server Error
+  /updateBeehive:
+    put:
+      summary: Update Beehive value by ID
+      description: Update Beehive data with the specified ID.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBeehiveRequest'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValueMessage'
+        '404':
+          description: Beehive with the specified ID not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValueMessage'
+        '500':
+          description: Internal Server Error
+components:
+  schemas:
+    BeehiveValue:
+      type: object
+      properties:
+        Device:
+          type: integer
+        HiveNumber:
+          type: integer
+        HiveTemp:
+          type: number
+        HiveHumidity:
+          type: number
+        HivePressure:
+          type: number
+        WeatherTemp:
+          type: number
+        WeatherHumidity:
+          type: integer
+        WeatherPressure:
+          type: integer
+        WindSpeed:
+          type: number
+        WeatherID:
+          type: integer
+        CloudCoverage:
+          type: integer
+        Rain:
+          type: integer
+        Lat:
+          type: number
+        Lon:
+          type: number
+        FileName:
+          type: string
+        QueenPresence:
+          type: integer
+        QueenAcceptance:
+          type: integer
+        Frames:
+          type: integer
+        Target:
+          type: integer
+        Time:
+          type: number
+        QueenStatus:
+          type: integer
+    ValueMessage:
+      type: object
+      properties:
+        id:
+          type: string
+        message:
+          type: string
+    UpdateBeehiveRequest:
+      type: object
+      properties:
+        id:
+          type: string
+        Device:
+          type: integer
+        HiveNumber:
+          type: integer
+        Date:
+          type: string
+        HiveTemp:
+          type: number
+        HiveHumidity:
+          type: number
+        HivePressure:
+          type: number
+        WeatherTemp:
+          type: number
+        WeatherHumidity:
+          type: integer
+        WeatherPressure:
+          type: integer
+        WindSpeed:
+          type: number
+        WeatherID:
+          type: integer
+        CloudCoverage:
+          type: integer
+        Rain:
+          type: integer
+        Lat:
+          type: number
+        Lon:
+          type: number
+        FileName:
+          type: string
+        QueenPresence:
+          type: integer
+        QueenAcceptance:
+          type: integer
+        Frames:
+          type: integer
+        Target:
+          type: integer
+        Time:
+          type: number
+        QueenStatus:
+          type: integer

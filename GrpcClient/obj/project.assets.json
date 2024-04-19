@@ -305,11 +305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikola\\source\\repos\\GrpcClientIoT\\GrpcClient\\GrpcClient.csproj",
+      "projectUniqueName": "D:\\IoT-1\\GrpcClient\\GrpcClient.csproj",
       "projectName": "GrpcClient",
-      "projectPath": "C:\\Users\\nikola\\source\\repos\\GrpcClientIoT\\GrpcClient\\GrpcClient.csproj",
+      "projectPath": "D:\\IoT-1\\GrpcClient\\GrpcClient.csproj",
       "packagesPath": "C:\\Users\\nikola\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikola\\source\\repos\\GrpcClientIoT\\GrpcClient\\obj\\",
+      "outputPath": "D:\\IoT-1\\GrpcClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",

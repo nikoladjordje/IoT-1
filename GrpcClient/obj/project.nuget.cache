@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kppRQVrHQ/kjpVufosVvMIRnIwyXz/PQBDaGsbWpo1PWkhtbFV5MXj5RAw7HlAS7GqMbvUpk8KaEm0jb6i5tDQ==",
+  "dgSpecHash": "NecLsFlyPG1S0fRGf4PEr3lnS0xzt4gzV2Ze02qztuYEjmgce1E3HRXHuW8X2iK6MXGu61f2kd8bZCObHUl1Ww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikola\\source\\repos\\GrpcClientIoT\\GrpcClient\\GrpcClient.csproj",
+  "projectFilePath": "D:\\IoT-1\\GrpcClient\\GrpcClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikola\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
     "C:\\Users\\nikola\\.nuget\\packages\\grpc.core.api\\2.62.0\\grpc.core.api.2.62.0.nupkg.sha512",

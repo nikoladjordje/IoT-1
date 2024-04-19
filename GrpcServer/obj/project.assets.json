@@ -1491,11 +1491,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikola\\source\\repos\\GrpcClientIoT\\GrpcClientIoT\\GrpcServer.csproj",
+      "projectUniqueName": "D:\\IoT-1\\GrpcServer\\GrpcServer.csproj",
       "projectName": "GrpcServer",
-      "projectPath": "C:\\Users\\nikola\\source\\repos\\GrpcClientIoT\\GrpcClientIoT\\GrpcServer.csproj",
+      "projectPath": "D:\\IoT-1\\GrpcServer\\GrpcServer.csproj",
       "packagesPath": "C:\\Users\\nikola\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nikola\\source\\repos\\GrpcClientIoT\\GrpcClientIoT\\obj\\",
+      "outputPath": "D:\\IoT-1\\GrpcServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",

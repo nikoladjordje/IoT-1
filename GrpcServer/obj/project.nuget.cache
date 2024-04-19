@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Aa5paR/JUAXhk9XEBZezrdPAwZBmZHyg0R/8G9EFY4I8iEkh94MtLo47mRVg7RwoDQV1J4fS8jFf4BQjgiMiVw==",
+  "dgSpecHash": "AAsPajqq2g/bv9z+GrfvTiBgdWBB2yK5wStHoX2lEGEZ2wqB6mW5+KjmrzRiZycg57spuZnSceXdiYlFAcFG4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikola\\source\\repos\\GrpcClientIoT\\GrpcClientIoT\\GrpcServer.csproj",
+  "projectFilePath": "D:\\IoT-1\\GrpcServer\\GrpcServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikola\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\nikola\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -94,7 +94,7 @@ namespace GrpcClientIoT.Services
                 _id = objectId,
                 Device = request.Device,
                 HiveNumber = request.HiveNumber,
-                Date = DateTime.Now,
+                Date = DateTime.Now.ToString(),
                 HiveTemp = request.HiveTemp,
                 HiveHumidity = request.HiveHumidity,
                 HivePressure = request.HivePressure,
@@ -177,7 +177,7 @@ namespace GrpcClientIoT.Services
 
             beehiveValue.Device = request.Device;
             beehiveValue.HiveNumber = request.HiveNumber;
-            beehiveValue.Date = DateTime.Now;
+            beehiveValue.Date = DateTime.Now.ToString();
             beehiveValue.HiveTemp = request.HiveTemp;
             beehiveValue.HiveHumidity = request.HiveHumidity;
             beehiveValue.HivePressure = request.HivePressure;
