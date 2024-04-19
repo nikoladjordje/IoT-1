@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcClientIoT";
+
+package microservice;
+
+import "google/protobuf/timestamp.proto";
+
+service Beehive {
+	rpc GetBeehiveValueById(BeehiveId) returns (ValueMessage);
+	rpc AddBeehiveValue(BeehiveValue) returns (ValueMessage);
+	rpc DeleteBeehiveValueById(BeehiveId) returns (ValueMessage);
+	rpc UpdateBeehiveValueById(BeehiveValue) returns (ValueMessage);
+	rpc BeehiveAggregation(BeehiveAggregationRequest) returns (AggregationValue);
+}
+
+message BeehiveId {
+	string _id = 1;
+}
+
+message BeehiveValue {
+    string _id = 1;
+    int32 Device = 2;
+    int32 HiveNumber = 3;
+    string Date = 4;
+    double HiveTemp = 5;
+    double HiveHumidity = 6;
+    double HivePressure = 7;
+    double WeatherTemp = 8;
+    int32 WeatherHumidity = 9;
+    int32 WeatherPressure = 10;
+    double WindSpeed = 11;
+    int32 WeatherID = 12;
+    int32 CloudCoverage = 13;
+    int32 Rain = 14;
+    double Lat = 15;
+    double Lon = 16;
+    string FileName = 17;
+    int32 QueenPresence = 18;
+    int32 QueenAcceptance = 19;
+    int32 Frames = 20;
+    int32 Target = 21;
+    double Time = 22;
+    int32 QueenStatus = 23;
+}
+
+message ValueMessage {
+	string id = 1;
+	string message = 2;
+	BeehiveValue beehiveValue = 3;
+}
+
+message BeehiveAggregationRequest {
+  string start_timestamp = 1;
+  string end_timestamp = 2;
+  string operation = 3;
+  string field_name = 4;
+}
+
+message AggregationValue{
+    double result = 1;
+}
